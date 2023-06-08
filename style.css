@@ -1,0 +1,596 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+#home {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url("assets/background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    height: 100vh;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    padding: 20px 15px;
+    background: transparent;
+}
+
+button {
+    cursor: pointer;
+}
+
+.logo {
+    font-size: 28px;
+    color: #FFF;
+}
+
+.logo-color {
+    color: rgba(226, 163, 28, 0.788);
+}
+
+.nav-links {
+    display: flex;
+}
+
+.nav-links a {
+    display: block;
+    text-decoration: none;
+    color: #FFF;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 0 12px;
+}
+
+.nav-links a::after {
+    content: '';
+    display: block;
+    width: 0%;
+    height: 2px;
+    background: rgba(226, 163, 28, 0.788);
+    transition: width .3s;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+    transition: width .3s;
+}
+
+.buttons a {
+    padding-right: 15px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #FFF;
+}
+
+button {
+    border: none;
+    border-radius: 35px;
+    outline: none;
+    background-color: rgba(226, 163, 28, 0.788);
+    color: #FFF;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 8px 15px;
+}
+
+.hero {
+    padding: 100px 0 0 200px;
+}
+
+#home h1 {
+    color: #FFF;
+    font-size: 48px;
+}
+
+#home p {
+    color: #FFF;
+    font-size: 18px;
+    width: 40%;
+    padding: 15px 0;
+    line-height: 30px;
+}
+
+.exp-btn {
+    border: none;
+    border-radius: 35px;
+    outline: none;
+    background-color: rgba(226, 163, 28, 0.788);
+    color: #FFF;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 8px 20px;
+    cursor: pointer;
+}
+
+.idea-box {
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 800px;
+    height: 150px;
+    background-color: #FFF;
+    box-shadow: 10px 14px 4px rgb(39, 36, 36);
+    z-index: 1;
+}
+
+.box {
+    position: absolute;
+    top: 550px;
+    left: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+#menu-section {
+    height: auto;
+    background-color: #FFF;
+}
+
+.menu-container {
+    display: flex;
+    padding: 200px 100px 50px 100px;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.best-deal-text,
+.what-us-text {
+    padding-bottom: 50px;
+}
+
+.menu-container .logo-2 {
+    font-size: 34px;
+    font-weight: bold;
+}
+
+.underline-txt {
+    border-bottom: 3px solid rgba(226, 163, 28, 0.788);
+}
+
+.selections a {
+    text-decoration: none;
+    color: #000;
+    padding-right: 15px;
+    font-weight: 600;
+}
+
+.btn-1,
+.btn-2 {
+    background-color: #FFF;
+    color: rgba(226, 163, 28, 0.788);
+    font-size: 14px;
+    font-weight: normal;
+    padding: 4px 14px;
+    border: 2px solid rgba(226, 163, 28, 0.788);
+}
+
+.like,
+.rating-icon {
+    width: 20px;
+    height: 20px;
+    background-color: rgba(226, 163, 28, 0.788);
+    border-radius: 50%;
+}
+
+.description-icon {
+    width: 20px;
+    height: 20px;
+    background-color: rgba(226, 163, 28, 0.788);
+    border-radius: 50%;
+}
+
+.coffee-brand,
+.sub-options {
+    display: flex;
+    width: 280px;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.ratings {
+    display: flex;
+}
+
+.coffee-gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding-bottom: 150px;
+}
+
+.img-box {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    box-shadow: 4px 6px 10px #b1a5a5;
+    padding: 20px;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: transform .4s;
+}
+
+.img-box:hover {
+    transform: scale(1.1);
+}
+
+.h1-diff {
+    font-size: 34px;
+    padding-bottom: 0;
+}
+
+.explain-box {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 0 0 50px 20px;
+}
+
+.explain-box h4 {
+    color: #b1a5a5;
+}
+
+.explain-box p {
+    color: #b1a5a3;
+    width: 100%;
+    padding-right: 40px;
+    padding-bottom: 20px;
+}
+
+hr {
+    margin: 0 55px 0 -15px;
+}
+
+.why-us-box {
+    display: flex;
+    flex-direction: column;
+    width: 670px;
+}
+
+#why-us-section {
+    height: auto;
+    background: #FFF;
+    padding-left: 100px;
+}
+
+.left-side {
+    display: flex;
+    flex-direction: column;
+}
+
+.right-side {
+    object-fit: fill;
+    display: flex;
+}
+
+.whole {
+    display: flex;
+    flex-direction: row;
+}
+
+#about {
+    height: auto;
+    background-color: #FFF;
+}
+
+.about-us {
+    padding-left: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.about-us h4 {
+    color: rgb(104, 104, 124);
+    font-size: 32px;
+}
+
+.about-us p {
+    width: 600px;
+    padding-bottom: 35px;
+    color: #b1a5a3;
+}
+
+.right-div {
+    display: flex;
+    flex-direction: row;
+    gap: 150px;
+}
+
+.right-coffee-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.order-btn-1 {
+    margin: -15px 0 0 100px;
+}
+
+.order-btn-2 {
+    position: absolute;
+    bottom: 10%;
+    margin: 255px 0 0 650px;
+}
+
+#coffee-image-bg {
+    margin-top: 50px;
+    height: 50vh;
+    background-image: linear-gradient(rgba(219, 177, 86, 0.788), rgba(219, 177, 86, 0.788)), url("assets/coffe+beans.png");
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+#coffee-image-bg .right-side {
+    display: flex;
+    position: absolute;
+    top: 10%;
+    left: 40%;
+    flex-direction: column;
+    width: 500px;
+}
+
+#coffee-image-bg .right-side h2 {
+    color: #fff;
+    font-size: 28px;
+    padding-bottom: 10px;
+}
+
+#coffee-image-bg .right-side p {
+    color: #fff;
+    padding: 0 0 10px 0;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #000;
+    color: #FFF;
+    height: 200px;
+}
+
+.foot-h2,
+.foot-a,
+.foot-p {
+    padding-right: 25px;
+    font-size: 18px;
+    color: #b1a5a3;
+    text-decoration: none;
+}
+
+
+
+@media screen and (max-width:412px) {
+    .nav-links,
+    .buttons {
+        display: none;
+    }
+    
+    .hero {
+        padding: 100px 50px 0 50px;
+    }
+
+    #home {
+        background-color: crimson;
+        width: auto;
+    }
+
+    #home h1 {
+        font-size: 36px;
+    }
+
+    #home p {
+        width: 100%;
+    }
+
+    .idea-box {
+        display: flex;
+        flex-wrap: wrap;
+        height: 300px;
+        width: 300px;
+        background-color: #FFF;
+        box-shadow: 10px 14px 4px rgb(39, 36, 36);
+        z-index: 1;
+    }
+
+    .box {
+        position: absolute;
+        top: 550px;
+        left: 50px;
+    }
+
+    .description {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    #menu-section {
+        height: auto;
+        width: auto;
+        background-color: pink;
+    }
+
+    .menu-container {
+        display: flex;
+        padding: 0;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+    }
+
+    .best-deal-text,
+    .what-us-text {
+        padding-bottom: 50px;
+    }
+
+    .menu-container .logo-2 {
+        font-weight: bold;
+        padding: 40px 0 10px 120px;
+    }
+
+    .underline-txt {
+        border-bottom: 3px solid rgba(226, 163, 28, 0.788);
+    }
+
+    .selections a {
+        display: none;
+    }
+
+    #why-us-section {
+        height: 100%;
+        width: auto;
+        background: linear-gradient(to bottom,
+                blueviolet 0%,
+                blueviolet 35%,
+                pink 35%,
+                pink 100%);
+        padding-left: 0;
+    }
+
+    .left-side .what-us-text {
+        width: 100%;
+        padding: 10px 0 20px 15px;
+    }
+
+    #why-us-section .right-side {
+        display: none;
+    }
+
+    .why-us-box {
+        width: 412px;
+    }
+
+    .h1-diff {
+        font-size: 30px;
+        padding: 0 10px;
+    }
+
+    .best-deal-text {
+        width: 412px;
+        padding: 0 20px 50px 20px;
+    }
+
+    .img-box{
+        background-color: #FFF;
+    }
+    .img-box:hover{
+        transform: scale(1);
+    }
+
+    .right-coffee-img {
+        display: none;
+    }
+
+    #about {
+        width: 100%;
+        height: auto;
+        padding: 20px 0 15px 20px;
+        background-color: cornflowerblue;
+    }
+
+    .about-us {
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .about-us .h1-diff {
+        padding: 0;
+    }
+
+    .about-us h4 {
+        color: rgb(255, 255, 255);
+        font-size: 22px;
+        width: 412px;
+    }
+
+    .about-us p {
+        width: 100%;
+        font-size: 14px;
+        padding-right: 40px;
+    }
+
+    .order-btn-1 {
+        margin: 15px 0 30px 0;
+    }
+
+    .order-btn-2 {
+        position: absolute;
+        bottom: 10%;
+        margin: 30px 0 0 20px;
+    }
+
+    #coffee-image-bg {
+        margin: 0;
+        background-image: linear-gradient(rgba(219, 177, 86, 0.788), rgba(219, 177, 86, 0.788)), url("assets/coffe+beans.png");
+        background-repeat: no-repeat;
+        position: relative;
+    }
+
+    #coffee-image-bg .right-side {
+        display: flex;
+        padding: 40px 20px 0 20px;
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #coffee-image-bg .right-side h2 {
+        color: #fff;
+        font-size: 28px;
+        padding-bottom: 10px;
+    }
+
+    #coffee-image-bg .right-side p {
+        color: #fff;
+        font-size: 18px;
+        padding-bottom: 0px;
+    }
+    footer{
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+    .foot-h2,
+    .foot-a,
+    .foot-p {
+        font-size: 14px;
+        color: #b1a5a3;
+        text-decoration: none;
+}
+}
